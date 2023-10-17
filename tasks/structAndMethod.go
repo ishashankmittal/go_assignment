@@ -18,12 +18,12 @@ type Person struct {
 func DefineAndPrintStruct() {
 	// Define a struct named Person with fields Name, Age, and City , Again.
 
-	// Create an instance of the Person struct with sample values.
-	person := Person{
-		Name: "John",
-		Age:  30,
-		City: "New York",
-	}
+	// Comment out this instance of the Person struct with sample values.
+	// person := Person{
+	// 	Name: "John",
+	// 	Age:  30,
+	// 	City: "New York",
+	// }
 	// Print the fields of the struct instance.
 }
 

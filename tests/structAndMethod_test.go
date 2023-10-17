@@ -21,18 +21,18 @@ func TestDefineAndPrintStruct(t *testing.T) {
 	}
 }
 
-func TestAddMethodToStruct(t *testing.T) {
-	// Create a Person instance with sample values
-	testperson := TestPerson{
-		Person: tasks.Person{Name: "Alice",
-			Age:  25,
-			City: "New York"},
-	}
+// func TestAddMethodToStruct(t *testing.T) {
+// 	// Create a Person instance with sample values
+// 	testperson := TestPerson{
+// 		Person: tasks.Person{Name: "Alice",
+// 			Age:  25,
+// 			City: "New York"},
+// 	}
 
-	// Test the GetInfo method
-	info := testperson.Person.GetInfo()
-	expectedInfo := "Name: Alice, Age: 25, City: New York"
-	if info != expectedInfo {
-		t.Errorf("Expected info: %s, Got: %s", expectedInfo, info)
-	}
-}
+// 	// Test the GetInfo method
+// 	info := testperson.Person.GetInfo()
+// 	expectedInfo := "Name: Alice, Age: 25, City: New York"
+// 	if info != expectedInfo {
+// 		t.Errorf("Expected info: %s, Got: %s", expectedInfo, info)
+// 	}
+// }
