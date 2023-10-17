@@ -4,6 +4,6 @@ import "ishashankmittal/go_assignment/tasks"
 
 func main() {
 	tasks.PrintHelloWorld()
-	tasks.PrintInteger(69)
-	tasks.PrintSum(23, 46)
+	tasks.PrintInteger(100)
+	tasks.PrintSum(10,101)
 }
