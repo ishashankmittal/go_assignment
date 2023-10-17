@@ -30,8 +30,20 @@ func TestPrintInteger(t *testing.T) {
 	}
 }
 
-func TestPrintMessageWithPlaceholders(t *testing.T) {
+func TestPrintSum(t *testing.T) {
 	// Test Task 3: Print the sum of two integers and check the output.
+	capturedOutput := captureOutput(func() {
+		tasks.PrintSum(10, 20)
+	})
+
+	expectedOutput := "30"
+	if capturedOutput != expectedOutput {
+		t.Errorf("Expected output: %s, Got: %s", expectedOutput, capturedOutput)
+	}
+}
+
+func TestPrintMessageWithPlaceholders(t *testing.T) {
+	// Test Task 4: Write a function that prints a message with placeholders for a name and age.
 	capturedOutput := captureOutput(func() {
 		tasks.PrintMessageWithPlaceholders("Shashank Mittal", 20)
 	})
@@ -43,7 +55,7 @@ func TestPrintMessageWithPlaceholders(t *testing.T) {
 }
 
 func TestPrintFormattedDate(t *testing.T) {
-	// Test Task 3: Print the sum of two integers and check the output.
+	// Test Task 5: Write a function that prints a formatted date in the "YYYY-MM-DD" format.
 	capturedOutput := captureOutput(func() {
 		tasks.PrintFormattedDate(2023, 10, 18)
 	})
