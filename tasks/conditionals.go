@@ -19,7 +19,7 @@ func CheckDayOfWeek(input string) {
 	// Implement the code to check the validity of the day and print the corresponding message.
 }
 
-// Task 4: Write a function that takes a map of string keys and integer values and calculates the sum of the values.
+// Task 3: Write a function that takes a map of string keys and integer values and calculates the sum of the values.
 // If the sum of values is greater than 10, print "Sum is greater than 10."
 // If the sum of values is less than or equal to 10, print "Sum is 10 or less."
 

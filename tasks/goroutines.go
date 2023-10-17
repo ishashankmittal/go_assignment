@@ -1,6 +1,6 @@
 package tasks
 
-//implement task in main.go
+// implement task in main.go
 
 // Task: Print Numbers 1 to 10 Using Goroutines
 

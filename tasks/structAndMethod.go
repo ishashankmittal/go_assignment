@@ -37,3 +37,7 @@ func DefineAndPrintStruct() {
 // the GetInfo method should return "Name: Alice, Age: 25, City: New York."
 
 // here
+
+
+
+// Comment out function TestAddMethodToStruct in /tests/structAndMethod.go to test the Task 2
