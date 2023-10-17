@@ -1,5 +1,7 @@
 package tasks
 
+//implement task in main.go
+
 // Task: Print Numbers 1 to 10 Using Goroutines
 
 // Write a Go program that uses goroutines to print numbers from 1 to 10. The program should do the following:
