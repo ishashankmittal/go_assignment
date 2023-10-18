@@ -32,5 +32,5 @@ func PrintMessageWithPlaceholders(name string, age int) {
 
 func PrintFormattedDate(year, month, day int) {
 	// Implement the code to print the date in "YYYY-MM-DD" format.
-	fmt.Printf("%4d-%2d-%2d", year, month, day)
+	fmt.Printf("%04d-%02d-%02d", year, month, day)
 }
