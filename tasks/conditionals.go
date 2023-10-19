@@ -7,6 +7,13 @@ package tasks
 
 func PrintMessageBasedOnValue(num int) {
 	// Implement the code to print the appropriate message based on the value of num.
+	if num>0{
+		fmt.Println("Positive.")
+	}else if num<0{
+		fmt.Println("Negative.")
+	}else{
+		fmt.Println("Zero.")
+	}
 }
 
 // Task 2: Write a function that takes a string and checks if it is a valid day of the week.
