@@ -24,6 +24,14 @@ func PrintMessageBasedOnValue(num int) {
 
 func CheckDayOfWeek(input string) {
 	// Implement the code to check the validity of the day and print the corresponding message.
+	switch day{
+	case "Monday","Tuesday","Wednesday","Thursday","Friday":
+		fmt.Println("Weekday.")
+	case "Saturday","Sunday":
+		fmt.Println("Weekend.")
+	default:
+		fmt.Println("Invalid day.")
+	}
 }
 
 // Task 3: Write a function that takes a map of string keys and integer values and calculates the sum of the values.
@@ -32,4 +40,11 @@ func CheckDayOfWeek(input string) {
 
 func CheckIfSumIsLessThan10(inputMap map[string]int) {
 	// Implement the code.
+	var sum int;
+	sum=0
+	for _,value:=range inputMap{
+		sum=sum+value
+	}
+	if sum>10{fmt.Println("Sum is greater than 10.")}
+	else{fmt.Println("Sum is 10 or less.")}
 }
