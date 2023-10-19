@@ -24,11 +24,17 @@ func DefineAndPrintStruct() {
 	// 	Age:  30,
 	// 	City: "New York",
 	// }
+
+	//
+
 	// Print the fields of the struct instance.
 }
 
 // Task 2: Add a Method to a Struct
 // Extend the Person struct from Task 6 with a method named GetInfo that takes no arguments and returns a string. This method should return a formatted string that includes the person's name, age, and city.
+func GetInfo() {
+
+}
 
 // Construct the GetInfo method such that it takes a struct of type Person
 // and returns a string.
@@ -37,7 +43,5 @@ func DefineAndPrintStruct() {
 // the GetInfo method should return "Name: Alice, Age: 25, City: New York."
 
 // here
-
-
 
 // Comment out function TestAddMethodToStruct in /tests/structAndMethod.go to test the Task 2
