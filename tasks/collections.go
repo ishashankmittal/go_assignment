@@ -4,6 +4,7 @@ package tasks
 
 func CreateAndPrintSlice() {
 	// Implement the code to create and print a slice of integers.
+	
 }
 
 // Task 2: Write a function that takes a slice of integers and calculates and prints their sum.
