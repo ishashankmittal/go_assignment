@@ -2,7 +2,7 @@ package tests
 
 import (
 	"fmt"
-	"ishashankmittal/go_assignment/tasks"
+	"AKSHIT/go_assignment_main/tasks"
 	"testing"
 )
 

@@ -1,5 +1,5 @@
 package tasks
-
+import "fmt"
 // Define a struct named Person with fields Name, Age, and City
 type Person struct {
 	Name string
@@ -25,6 +25,9 @@ func DefineAndPrintStruct() {
 	// 	City: "New York",
 	// }
 	// Print the fields of the struct instance.
+	p:=Person{"John",30,"New York"}
+	fmt.Printf("Name: %s, Age: %d, City: %s\n",p.Name,p.Age,p.City)
+
 }
 
 // Task 2: Add a Method to a Struct

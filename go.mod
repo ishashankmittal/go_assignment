@@ -1,3 +1,3 @@
-module ishashankmittal/go_assignment
+module AKSHIT/go_assignment_main
 
-go 1.21.1
+go 1.21.3

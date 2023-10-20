@@ -1,9 +1,23 @@
 package main
 
-import "ishashankmittal/go_assignment/tasks"
-
+import (
+	"fmt"
+	"time"
+)
+func printFirstHalf(){
+	for i:=1; i<6; i++ {
+		fmt.Println(i)
+		time.Sleep(1*time.Second)
+	}
+}	
+func printSecondHalf(){
+	for i:=6; i<=10; i++ {
+		fmt.Println(i)
+		time.Sleep(1*time.Second)	
+}
+}
 func main() {
-	tasks.PrintHelloWorld()
-	tasks.PrintInteger(100)
-	tasks.PrintSum(10,101)
+	go printSecondHalf()
+	printFirstHalf()
+		
 }
