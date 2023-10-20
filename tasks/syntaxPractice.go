@@ -1,9 +1,10 @@
 package tasks
-
+import fmt
 // Task 1: Write a function that prints "Hello World" to the console.
 
 func PrintHelloWorld() {
 	// Implement the code to print "Hello World"
+	fmt.print("Hello World")
 }
 
 // Task 2: Write a function that takes an integer and prints it to the console using string formatting.
