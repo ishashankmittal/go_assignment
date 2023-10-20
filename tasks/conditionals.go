@@ -1,4 +1,5 @@
 package tasks
+import "fmt"
 
 // Task 1: Write a function that takes an integer and prints a message based on the value:
 // - If the integer is positive, print "Positive."
@@ -6,7 +7,15 @@ package tasks
 // - If the integer is zero, print "Zero."
 
 func PrintMessageBasedOnValue(num int) {
-	// Implement the code to print the appropriate message based on the value of num.
+	if num > 0 {
+		fmt.Print("Positive\n")
+	}
+	if num < 0 {
+		fmt.Print("Negative\n")
+	}
+	if num ==0 {
+		fmt.Print("Zero\n")
+	}
 }
 
 // Task 2: Write a function that takes a string and checks if it is a valid day of the week.
@@ -17,6 +26,24 @@ func PrintMessageBasedOnValue(num int) {
 
 func CheckDayOfWeek(input string) {
 	// Implement the code to check the validity of the day and print the corresponding message.
+	switch input {
+	case "Monday":
+		fmt.Println("Weekday")
+	case "Tuesday":
+		fmt.Println("Weekday")
+	case "Wednesday":
+		fmt.Println("Weekday")
+	case "Thursday":
+		fmt.Println("Weekday")
+	case "Friday":
+		fmt.Println("Weekday")
+	case "Saturday":
+		fmt.Println("Weekend")
+	case "Sunday":
+		fmt.Println("Weekend")
+	default:
+		fmt.Println("Invalid day")
+	}
 }
 
 // Task 3: Write a function that takes a map of string keys and integer values and calculates the sum of the values.
@@ -25,4 +52,14 @@ func CheckDayOfWeek(input string) {
 
 func CheckIfSumIsLessThan10(inputMap map[string]int) {
 	// Implement the code.
+	sum := 0
+	for _,value := range inputMap{
+		sum+=value
+	}
+	if sum > 10 {
+		fmt.Println("Sum is greater than 10")
+	}
+	if sum<=10{
+		fmt.Println("Sum is 10 or less")
+	}
 }
