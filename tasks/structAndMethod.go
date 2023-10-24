@@ -1,5 +1,5 @@
 package tasks
-
+import "fmt"
 // Define a struct named Person with fields Name, Age, and City
 type Person struct {
 	Name string
@@ -19,12 +19,13 @@ func DefineAndPrintStruct() {
 	// Define a struct named Person with fields Name, Age, and City , Again.
 
 	// Comment out this instance of the Person struct with sample values.
-	// person := Person{
-	// 	Name: "John",
-	// 	Age:  30,
-	// 	City: "New York",
-	// }
+	person := Person{
+		Name: "John",
+	 	Age:  30,
+	 	City: "New York",
+	 }
 	// Print the fields of the struct instance.
+	fmt.Printf("Name: %s, Age: %d, City: %s\n", person.Name, person.Age, person.City)
 }
 
 // Task 2: Add a Method to a Struct
@@ -37,7 +38,8 @@ func DefineAndPrintStruct() {
 // the GetInfo method should return "Name: Alice, Age: 25, City: New York."
 
 // here
-
-
+func (person Person) GetInfo() string{
+	return "Name: "+person.Name+", Age: "+fmt.Sprint(person.Age)+", City: "+person.City
+}
 
 // Comment out function TestAddMethodToStruct in /tests/structAndMethod.go to test the Task 2
