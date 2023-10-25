@@ -38,4 +38,7 @@ func FilterAndPrintOddNumbers(numbers []int) {
 
 func PrintMapKeysAndValues(data map[string]int) {
 	// Implement the code to print the keys and values in the map.
+	for key, value := range data {
+		fmt.Printf("Key: %s, Value: %d\n", key, value)
+	}
 }
