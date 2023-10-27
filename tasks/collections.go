@@ -16,10 +16,11 @@ func CreateAndPrintSlice() {
 
 func CalculateAndPrintSum(numbers []int) {
 	sum := 0
-	for _, num := range numbers {
-		sum += num
-	}
-	fmt.Println("Sum:", sum)
+    for i := 0; i < len(numbers); i++ {
+        sum += numbers[i]
+    }
+
+    fmt.Println("Sum of Numbers:", sum)
 	// Implement the code to calculate and print the sum of the numbers in the slice.
 }
 
