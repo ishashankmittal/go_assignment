@@ -47,7 +47,7 @@ func FilterAndPrintOddNumbers(numbers []int) {
         }
     }
 
-    fmt.Print("Odd Numbers:", oddNumbers)
+    fmt.Print("Odd Numbers: ", oddNumbers)
 	// Implement the code that takes a slice of integers, filters out even numbers, and prints the remaining odd numbers.
 }
 
