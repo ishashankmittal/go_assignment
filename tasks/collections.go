@@ -20,7 +20,7 @@ func CalculateAndPrintSum(numbers []int) {
         sum += numbers[i]
     }
 
-    fmt.Println("Sum of Numbers:", sum)
+    fmt.Println("Sum:", sum)
 	// Implement the code to calculate and print the sum of the numbers in the slice.
 }
 
@@ -29,7 +29,6 @@ func CalculateAndPrintSum(numbers []int) {
 func CreateAndPrintDaysOfWeek() {
 	daysOfWeek := [7]string{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
 
-    fmt.Println("Days of the Week:")
     for i := 0; i < len(daysOfWeek); i++ {
         fmt.Println(daysOfWeek[i])
     }
@@ -40,13 +39,15 @@ func CreateAndPrintDaysOfWeek() {
 // Task 4: Write a function that takes a slice of integers, filters out even numbers, and prints the remaining odd numbers.
 
 func FilterAndPrintOddNumbers(numbers []int) {
-	fmt.Print("Odd Numbers: ")
+    var oddNumbers []int
+
     for i := 0; i < len(numbers); i++ {
         if numbers[i]%2 != 0 {
-            fmt.Print(numbers[i], " ")
+            oddNumbers = append(oddNumbers, numbers[i])
         }
     }
-    fmt.Println()
+
+    fmt.Print("Odd Numbers:", oddNumbers)
 	// Implement the code that takes a slice of integers, filters out even numbers, and prints the remaining odd numbers.
 }
 

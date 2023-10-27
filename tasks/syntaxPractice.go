@@ -6,14 +6,14 @@ import (
 // Task 1: Write a function that prints "Hello World" to the console.
 
 func PrintHelloWorld() {
-	fmt.Println("Hello World")
+	fmt.Print("Hello World")
 	// Implement the code to print "Hello World"
 }
 
 // Task 2: Write a function that takes an integer and prints it to the console using string formatting.
 
 func PrintInteger(n int) {
-	fmt.Printf("the integer is: %d\n", n)
+	fmt.Printf("%d", n)
 	// Implement the code to print the integer n.
 }
 
@@ -21,7 +21,7 @@ func PrintInteger(n int) {
 
 func PrintSum(a, b int) {
 	sum := a+b
-	fmt.Printf("the sum of %d and %d is %d\n",a,b,sum)
+	fmt.Printf("%d",sum)
 	// Implement the code to print the sum of a and b.
 }
 
@@ -35,6 +35,6 @@ func PrintMessageWithPlaceholders(name string, age int) {
 // Task 5: Write a function that prints a formatted date in the "YYYY-MM-DD" format.
 
 func PrintFormattedDate(year, month, day int) {
-	fmt.Printf("%d-%02d-%02d\n", year, month, day)
+	fmt.Printf("%d-%02d-%02d", year, month, day)
 	// Implement the code to print the date in "YYYY-MM-DD" format.
 }
