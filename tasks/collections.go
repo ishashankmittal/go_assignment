@@ -2,6 +2,7 @@ package tasks
 
 import (
 	"fmt"
+    "sort"
 )
 
 // Task 1: Write a function that creates and prints a slice of integers with values 1 to 5.
@@ -47,7 +48,7 @@ func FilterAndPrintOddNumbers(numbers []int) {
         }
     }
 
-    fmt.Print("Odd Numbers: ", oddNumbers)
+    fmt.Println("Odd Numbers:", oddNumbers)
 	// Implement the code that takes a slice of integers, filters out even numbers, and prints the remaining odd numbers.
 }
 
@@ -59,6 +60,8 @@ func PrintMapKeysAndValues(data map[string]int) {
     for key := range data {
         keys = append(keys, key)
     }
+
+	sort.Strings(keys) // Sort the keys
 
     for i := 0; i < len(keys); i++ {
         key := keys[i]
