@@ -1,5 +1,8 @@
 package tasks
 
+import(
+	"fmt"
+)
 // Define a struct named Person with fields Name, Age, and City
 type Person struct {
 	Name string
@@ -24,10 +27,21 @@ func DefineAndPrintStruct() {
 	// 	Age:  30,
 	// 	City: "New York",
 	// }
+	var person Person
+	person.Name = "John"
+	person.Age = 30
+	person.City = "New York"
+
+	// Print the fields of the struct instance.
+	fmt.Printf("Name: %s, Age: %d, City: %s\n", person.Name, person.Age, person.City)
+
 	// Print the fields of the struct instance.
 }
 
 // Task 2: Add a Method to a Struct
+func (p Person) GetInfo() string {
+	return fmt.Sprintf("Name: %s, Age: %d, City: %s", p.Name, p.Age, p.City)
+}
 // Extend the Person struct from Task 6 with a method named GetInfo that takes no arguments and returns a string. This method should return a formatted string that includes the person's name, age, and city.
 
 // Construct the GetInfo method such that it takes a struct of type Person
