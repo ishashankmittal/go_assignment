@@ -29,11 +29,11 @@ func PrintMessageBasedOnValue(num int) {
 func CheckDayOfWeek(input string) {
 	switch input {
 	case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday":
-		fmt.Println("Weekday.")
+		fmt.Println("Weekday")
 	case "Saturday", "Sunday":
-		fmt.Println("Weekend.")
+		fmt.Println("Weekend")
 	default:
-		fmt.Println("Invalid day.")
+		fmt.Println("Invalid day")
 	}
 	// Implement the code to check the validity of the day and print the corresponding message.
 }
@@ -53,9 +53,9 @@ func CheckIfSumIsLessThan10(inputMap map[string]int) {
 
     // Print message based on the sum
     if sum > 10 {
-        fmt.Println("Sum is greater than 10.")
+        fmt.Println("Sum is greater than 10")
     } else {
-        fmt.Println("Sum is 10 or less.")
+        fmt.Println("Sum is 10 or less")
     }
 	// Implement the code.
 }
