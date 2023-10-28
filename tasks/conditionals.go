@@ -11,11 +11,11 @@ import(
 
 func PrintMessageBasedOnValue(num int) {
 	if num > 0 {
-		fmt.Println("Positive.")
+		fmt.Println("Positive")
 	} else if num < 0 {
-		fmt.Println("Negative.")
+		fmt.Println("Negative")
 	} else {
-		fmt.Println("Zero.")
+		fmt.Println("Zero")
 	}
 	// Implement the code to print the appropriate message based on the value of num.
 }
